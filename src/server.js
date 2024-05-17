@@ -13,6 +13,6 @@ app.use(json());
 app.get('/', (req, res) => {
     res.send('Hello World!');
   });
-app.listen(8080, ()=>{
+app.listen(process.env.PORT || 8080, ()=>{
     console.log('obs up in port 8080');
 })
